@@ -15,7 +15,7 @@ var {doMongooseConnection}=require("./config/mongooseConnect");
 
 let app=express();
 
-app.use(cors( {origin:"https://event-guide-frontend.vercel.app/", credentials:true})); 
+app.use(cors( {origin:"https://event-guide-frontend.vercel.app", credentials: true})); 
 app.use(express.json()); //To read JSON Array coming from React
 app.use(express.urlencoded(true)); //convert POST data to JSON object
 app.use(fileuploader());
