@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const { validateToken } = require("../config/jwtValidation");
+const { validateToken } = require("../config/jwtvalidation");
 
 const {
     doSignup,
