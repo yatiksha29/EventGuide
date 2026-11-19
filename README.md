@@ -1,47 +1,61 @@
-# Event Guide – Backend API ⚙️
+# ⚙️ Event Guide – Backend API
 
-The **Event Guide Backend** is the server-side application responsible for handling business logic, database operations, authentication and API communication for the Event Guide platform.
+### Server-Side Application
 
-It follows the **MVC (Model-View-Controller) Architecture** to maintain a structured and organized backend codebase.
+The Event Guide Backend is responsible for handling application logic, database operations, user authentication and API communication.
 
-## Key Features
+The backend follows the **MVC (Model-View-Controller) Architecture** to maintain a structured and organized application.
+
+## ✨ Key Features
 
 - **MVC Architecture:** Organized backend structure using Models, Controllers and Routes.
-- **User Management:** Registration and login functionality.
+- **User Authentication:** User registration and login functionality.
 - **JWT Authentication:** Token-based authentication and protected routes.
-- **Password Security:** Password hashing using bcrypt.
+- **Password Encryption:** Secure password hashing using bcryptjs.
 - **Vendor Management:** Vendor registration and information management.
-- **Vendor Search:** Search based on city, event and service category.
+- **Vendor Search:** Search vendors based on city, event and service category.
 - **Favourites Management:** APIs for managing favourite vendors.
 - **Rating System:** Submit and retrieve vendor ratings.
 - **Image Upload:** Cloudinary integration for image storage.
 - **AI-powered OCR:** Google Gemini integration for extracting information from uploaded ID images.
 
-## Backend Architecture
+## 🏗️ Backend Architecture
 
-The backend follows the MVC pattern:
+The project follows the MVC architecture:
 
-- **Models:** Define MongoDB schemas and handle database structure using Mongoose.
-- **Controllers:** Handle application logic and process API requests.
-- **Routes:** Define API endpoints and connect them with their respective controllers.
+**1. Models**
+- Define MongoDB schemas using Mongoose.
+- Manage database structure and data.
 
-## Technologies Used
+**2. Controllers**
+- Handle application logic.
+- Process requests and generate responses.
+
+**3. Routes**
+- Define API endpoints.
+- Connect routes with their respective controllers.
+
+## 🛠️ Technologies Used
 
 - Node.js
 - Express.js
 - MongoDB
 - Mongoose
-- JWT
+- JSON Web Token (JWT)
 - bcryptjs
 - Cloudinary
 - Google Gemini API
 
-## Project Deployment
+## 🌐 Project Links
 
-**Backend API:** https://eventguide.onrender.com
+**Backend Deployment:** https://eventguide.onrender.com
 
-**Frontend Website:** https://event-guide-frontend.vercel.app/
+**Live Frontend:** https://event-guide-frontend.vercel.app/
+
+## 🎯 Project Objective
+
+To develop a structured and secure backend system that manages event vendor discovery, user authentication and application functionalities through REST APIs.
 
 ---
 
-Developed as the backend system of the Event Guide MERN Stack Application.
+**Event Guide | MERN Stack Project**
