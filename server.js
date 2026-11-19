@@ -36,6 +36,10 @@ app.use("/Event", eventRouter);
 app.use("/Favs", favsRouter);
 app.use("/Rating", ratingRouter);
 
+app.get("/", (req, res) => {
+    res.send("Event Guide Backend is Running Successfully!");
+});
+
 app.listen(2003, function(req,resp){
     console.log("Server started on localhost:2003");
 })
